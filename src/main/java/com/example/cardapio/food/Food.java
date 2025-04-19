@@ -21,36 +21,13 @@ public class Food {
 
     private Long id;
     private String title;
-    private Integer price;
+    private Double price;
+    private String image;
 
-    public Food(FoodResquestDTO data){
+    public Food(FoodRequestDTO data){
         this.price = data.price();
         this.title = data.title();
+        this.image = data.image();
 
     }
-
-//    // Getters and setters
-//    public Long getId() {
-//        return id;
-//    }
-//
-//    public void setId(Long id) {
-//        this.id = id;
-//    }
-//
-//    public String getTitle() {
-//        return title;
-//    }
-//
-//    public void setTitle(String title) {
-//        this.title = title;
-//    }
-//
-//    public Integer getPrice() {
-//        return price;
-//    }
-//
-//    public void setPrice(Integer price) {
-//        this.price = price;
-//    }
 }
